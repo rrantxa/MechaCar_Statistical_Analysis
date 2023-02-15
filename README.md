@@ -67,12 +67,21 @@ For our third analysis, we performed a series of T-Tests on our suspension coil 
 * Figure 9: With a p-value of 0.4168, we **have** enough evidence to conclude that the PSI of Lot 3 is statistically different from the population mean. If we compare this data to our Summary Statistics data, it seems that Lot 3 might be one that could have the most potential issues in the future. 
 
 ### Study Design: MechaCar vs Competition
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+Although this analysis focused on the performance of the MechaCar prototype according to a set of requirements defined by the automotive company, it would be highly beneficial to perform more statistical tests that would allow us to quantify how the MechaCar performs against the competition. Thus, we propose a study that would take the following elements into account: 
+* Metrics to test: 
 
-In your description, address the following questions:
+City Fuel Efficiency (CFE) based on Vehicle Brand. 
 
-* What metric or metrics are you going to test?
-* What is the null hypothesis or alternative hypothesis?
-* What statistical test would you use to test the hypothesis? And why?
-* What data is needed to run the statistical test?
-https://static.bc-edx.com/data/do-v2/m16/resources/Stats_Cheat_Sheet.pdf
+* Hypothesis:
+
+H0: There is no statistical difference between the CFE means of all groups. 
+
+H1: At least one of the CFE means is different from all other groups. 
+
+* Statistical test to perform: 
+
+One-way ANOVA. 
+
+* Data requirements: 
+
+We would of course need the city fuel efficiency data of multiple vehicle brands. In order to ensure the best results, our data should be of at least 50-60 data points per vehicle brand, and at least three vehicle brands (including the MechaCar prototype). The other vehicles should have similar characteristics to the MechaCar prototype. The data would be, preferrably, in a CSV format. 
